@@ -7,6 +7,8 @@ import {
 import Layout from "./layouts/Layout";
 import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
+import MediaSettings from "./pages/MediaSettings";
+import ServiceSettings from "./pages/ServiceSettings";
 
 function App() {
   return (
@@ -29,6 +31,25 @@ function App() {
             </Layout>
           }
         />
+
+        <Route
+          path="/media-settings"
+          element={
+            <Layout>
+              <MediaSettings />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/service-settings"
+          element={
+            <Layout>
+              <ServiceSettings />
+            </Layout>
+          }
+        />
+        
         <Route
           path="/register"
           element={
